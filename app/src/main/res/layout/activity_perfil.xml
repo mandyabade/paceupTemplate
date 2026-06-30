@@ -38,7 +38,13 @@
     <Button
         android:id="@+id/editProfile"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Editar" />
+        android:text="Editar"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_height="36dp"
+        android:backgroundTint="#006400"
+        android:paddingHorizontal="12dp"/>
+
 
 </LinearLayout>
