@@ -6,7 +6,19 @@ import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.ifpr.wearostemplate.presentation.PerfilActivity
+import android.widget.Toast
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.google.firebase.database.FirebaseDatabase
 import com.ifpr.wearostemplate.R
+import com.ifpr.wearostemplate.presentation.baseclasses.Corrida
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import com.google.firebase.database.FirebaseDatabase
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import android.widget.Toast
 
 class MainActivity : ComponentActivity() {
 
@@ -19,10 +31,28 @@ class MainActivity : ComponentActivity() {
 
         setContentView(R.layout.activity_main)
 
-        val btnPerfil = findViewById<Button>(R.id.btnPerfil)
 
-        btnPerfil.setOnClickListener {
-            startActivity(Intent(this@MainActivity, PerfilActivity::class.java))
+        val buttonPerfil = findViewById<Button>(R.id.btnPerfil)
+        buttonPerfil.setOnClickListener{
+            val intent = Intent(baseContext, PerfilActivity::class.java)
+            startActivity(intent)
         }
+
+        val btnStop = findViewById<Button>(R.id.btnPlay)
+        btnStop.setOnClickListener {
+            val distanciaKm = 2.5
+            val tempoSegundos = 900L
+            salvarCorrida(distanciaKm, tempoSegundos)
+            Toast.makeText(this, "Corrida salva!", Toast.LENGTH_SHORT).show()
+        }
+
     }
+
+    private fun salvarCorrida(distanciaKm: Double, tempoSegundos:
+    Long) {
+
+    }
+
+
 }
+

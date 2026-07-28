@@ -39,7 +39,7 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="13dp" />
+            android:layout_height="wrap_content" />
 
         <!-- MÉTRICAS -->
         <LinearLayout
@@ -180,16 +180,28 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="10dp" />
+            android:layout_height="wrap_content" />
 
         <!-- BOTÃO INICIAR MENOR -->
+
         <Button
             android:id="@+id/btnPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
+            android:layout_width="68dp"
+            android:layout_height="35dp"
             android:backgroundTint="#006400"
             android:paddingHorizontal="12dp"
             android:text="Iniciar"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="70dp"
+            android:layout_height="33dp"
+            android:backgroundTint="#006400"
+            android:paddingHorizontal="12dp"
+            android:text="Parar"
             android:textColor="#FFFFFF"
             android:textSize="10sp"
             android:textStyle="bold" />
