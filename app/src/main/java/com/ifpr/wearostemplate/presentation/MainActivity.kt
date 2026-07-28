@@ -14,11 +14,7 @@ import com.ifpr.wearostemplate.presentation.baseclasses.Corrida
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-import com.google.firebase.database.FirebaseDatabase
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
-import android.widget.Toast
+
 
 class MainActivity : ComponentActivity() {
 
